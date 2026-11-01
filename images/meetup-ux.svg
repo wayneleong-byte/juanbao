@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#f5e6c8"/>
+  <rect x="24" y="24" width="592" height="312" fill="none" stroke="#3d2314" stroke-width="4"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Georgia,serif" font-size="32" fill="#3d2314">UX for AI SDLC</text>
+  <text x="320" y="205" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#5c4033">Free Masterclass · Meetup</text>
+</svg>
