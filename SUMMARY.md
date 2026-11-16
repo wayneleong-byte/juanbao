@@ -1,10 +1,10 @@
-# 卷報 SUMMARY · 2026-11-15（Asia/Macau）
+# 卷報 SUMMARY · 2026-11-16（Asia/Macau）
 
-- **課數**：19（今日舉行 6；可報名／自學 13）
-- **期號**：第 013 號（11/6–11/8 未出刊；今早排程因用量用盡失敗，改為下午出刊。11/14 第 012 號已出刊）
-- **重點今日場次**：12:30 NKR「AI 入門 ABC」初學者工作坊（至 14:00）；16:00 Decoding Data Science 即場用 Gemini 建立 Agentic AI（至 18:00）；19:30 Innovate with Ajay「AI 編程問答」；20:00 每日 Masterclass（至 22:00）同 Accupass「第一個 AI 員工」直播回放場（繁中，Zoom，至 22:30）。澳門翌日凌晨：02:00–04:00 Eventbrite「用 AI 做出數碼產品」工作坊。
-- **HTML**：`2026-11-15.html`（`index.html`＝當天）；過刊保留 `2026-11-14`、`2026-11-13`、`2026-11-12`、`2026-11-11`、`2026-11-10`、`2026-11-09`（近 7 日內已刊）
-- **資料**：`courses-2026-11-15.json`
+- **課數**：29（今日舉行 10；可報名／自學 19）
+- **期號**：第 014 號（11/6–11/8 未出刊；11/15 第 013 號已出刊）
+- **重點今日場次**：15:30 humAIn「AI 代理入門」（瑞典語，至 17:00）；19:55 Accupass Claude Code 實戰（繁中，至 21:00）；20:00 LSE 創業者 AI 自動化（至 21:30）同每日 Masterclass（至 22:00）。澳門翌日凌晨：23:00 NetCom AI 基礎培訓；00:30 永續領袖 AI；01:00 紐約公共圖書館 AI 影片同 NetCom Google Cloud 生產部署；02:30 TAI Labs Claude Skill；04:00 俄勒岡大學職場 AI。
+- **HTML**：`2026-11-16.html`（`index.html`＝當天）；過刊保留 11/15–11/09（近 7 日內已刊）
+- **資料**：`courses-2026-11-16.json`
 - **公開網址**：https://wayneleong-byte.github.io/juanbao/
 - **特效**：純 CSS 紙紋 grain、masthead 入場、標題 ink-draw、卡片 staggered fade-up、hover 輕抬；prefers-reduced-motion 關閉
-- **備註**：已剔除付費（Eventbrite Agile Intelligence US$450、Amazon Bedrock 場銷售已結束）、實體（牛津 Personal Branding with AI，且已售罄）、須加入 Skool 社群的 AI Game 工作坊、報名已滿的 Luma「Beyond the Chat」、日期與星期不符的 TivoDigital SEO 場、收費未能完整核實的 Meetup Azure／AWS 場、以電商被動收入為主的 Meetup 場，以及非技能課的青年公民參與座談。Clapingo 官方頁現為 11/17，不是今日場。Google Skills 導論頁今日 HEAD／GET 均回 HTTP 200。Accupass 請用 www.accupass.com 官方頁，唔好用 staging。
+- **備註**：已剔除付費（Accupass 社群行銷三堂、ISO42001 實體收費場）、實體（京都 Claude Code）、404（Nano Banana）、內部限定（UCL staff）、銷售示範場，以及帶貨／被動收入場。AIUSI 11/19 已改期至 11/21。Microsoft Reactor 11/18 因官方頁未寫明免費票價暫不收錄。Google Skills 導論頁用瀏覽器標頭 HEAD 回 HTTP 200。Accupass 請用 www.accupass.com 官方頁，唔好用 staging。
