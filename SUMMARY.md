@@ -1,10 +1,10 @@
-# 卷報 SUMMARY · 2026-11-16（Asia/Macau）
+# 卷報 SUMMARY · 2026-11-17（Asia/Macau）
 
-- **課數**：29（今日舉行 10；可報名／自學 19）
-- **期號**：第 014 號（11/6–11/8 未出刊；11/15 第 013 號已出刊）
-- **重點今日場次**：15:30 humAIn「AI 代理入門」（瑞典語，至 17:00）；19:55 Accupass Claude Code 實戰（繁中，至 21:00）；20:00 LSE 創業者 AI 自動化（至 21:30）同每日 Masterclass（至 22:00）。澳門翌日凌晨：23:00 NetCom AI 基礎培訓；00:30 永續領袖 AI；01:00 紐約公共圖書館 AI 影片同 NetCom Google Cloud 生產部署；02:30 TAI Labs Claude Skill；04:00 俄勒岡大學職場 AI。
-- **HTML**：`2026-11-16.html`（`index.html`＝當天）；過刊保留 11/15–11/09（近 7 日內已刊）
-- **資料**：`courses-2026-11-16.json`
+- **課數**：32（今日舉行 9；可報名／自學 23）
+- **期號**：第 015 號（11/6–11/8 未出刊；11/16 第 014 號已出刊）
+- **重點今日場次**：20:00 Accupass Vibe Coding 入門（繁中，至 21:00）同每日 Masterclass（至 22:00，同時段請擇一）；21:30 BSC「LLM 由零到上線」（至 00:00）；22:00 Clapingo 三小時工作坊；22:30 SkillOps 溝通工作室同須核准的 Claude SMB 工作坊。澳門翌日清晨：03:00 俄勒岡州立大學 Vibe Coding；03:30 給主管的 AI；翌日早上 08:00 Consulgent 小企業實務分享。
+- **HTML**：`2026-11-17.html`（`index.html`＝當天）；過刊保留 11/16–11/10（近 7 日內已刊）
+- **資料**：`courses-2026-11-17.json`
 - **公開網址**：https://wayneleong-byte.github.io/juanbao/
 - **特效**：純 CSS 紙紋 grain、masthead 入場、標題 ink-draw、卡片 staggered fade-up、hover 輕抬；prefers-reduced-motion 關閉
-- **備註**：已剔除付費（Accupass 社群行銷三堂、ISO42001 實體收費場）、實體（京都 Claude Code）、404（Nano Banana）、內部限定（UCL staff）、銷售示範場，以及帶貨／被動收入場。AIUSI 11/19 已改期至 11/21。Microsoft Reactor 11/18 因官方頁未寫明免費票價暫不收錄。Google Skills 導論頁用瀏覽器標頭 HEAD 回 HTTP 200。Accupass 請用 www.accupass.com 官方頁，唔好用 staging。
+- **備註**：已剔除帶貨（飛騰 FPC）、實體（波士頓／吉隆坡）、機構限定（AI:AT EU／EuroHPC）、校園學生場（TWU）、產品示範（Ywork、Purplefish、NetSuite）。Microsoft Reactor 11/18 官方頁仍未寫明免費票價，暫不收錄。TAI Labs MCP 已由 11/19 改期至 12/03。Google Skills 導論頁 HEAD HTTP 200。Accupass 請用 www.accupass.com 官方頁，唔好用 staging。
