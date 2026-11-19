@@ -1,10 +1,10 @@
-# 卷報 SUMMARY · 2026-11-18（Asia/Macau）
+# 卷報 SUMMARY · 2026-11-19（Asia/Macau）
 
-- **課數**：34（今日舉行 15；可報名／自學 19）
-- **期號**：第 016 號（11/6–11/8 未出刊；11/17 第 015 號已出刊）
-- **重點今日場次**：19:00 Accupass 大學生 AI 必修課（至 20:00）；20:00 Gemini Skill（至 21:00）同每日 Masterclass（至 22:00，同時段請擇一）；20:30 Office 工作流（至 21:45）；23:00 AI.D 設計工作坊；23:30 Claude Code 入門。澳門翌日凌晨：00:00 Wursta Skills 同 Lead with Trust；01:00 TAP 同 Vibe Code Rehab；03:00 UMBC 教學設計講座；05:00 GMU ATAA 工作坊 II；翌日早上 08:00 預訂工作流同 GDG Tampa Bay；09:00 AI 安全白話工作坊。
-- **HTML**：2026-11-18.html（index.html＝當天）；過刊保留 11/17–11/11（近 7 日內已刊）
-- **資料**：courses-2026-11-18.json
+- **課數**：36（今日舉行 19；可報名／自學 17）
+- **期號**：第 017 號（11/6–11/8 未出刊；11/18 第 016 號已出刊）
+- **重點今日場次**：14:00 Accupass GEO 同 Welly「搞懂 AI Agent 都在看什麼」並場（至 15:30，請擇一）；19:50 Accupass「第一次認識 AI Agent 工作法」（至 21:00）；20:00 每日 Masterclass、AI 繪畫實作同 Nova Scale 團隊 AI 並場（請擇一）；20:30 Blue Canvas 英國中小企短場；22:00 Clapingo 三小時工作坊；22:30 SkillOps 同 Coding Blocks 並場；23:00 IMACI「AI Qez Ban」（須經 Instagram 報名）。澳門翌日凌晨：00:00 thalabus 模型架構；01:00 Virtual Office 同 NYC SBS；02:00 ODSC CRM、ChatGPT 語氣同財務代理三場並場；04:30 NAAIC 教師系列末場；早上 09:00 Luma AI 對齊與控制。
+- **HTML**：2026-11-19.html（index.html＝當天）；過刊保留 11/18–11/12（近 7 日內已刊）
+- **資料**：courses-2026-11-19.json
 - **公開網址**：https://wayneleong-byte.github.io/juanbao/
 - **特效**：純 CSS 紙紋 grain、masthead 入場、標題 ink-draw、卡片 staggered fade-up、hover 輕抬；prefers-reduced-motion 關閉
-- **備註**：已剔除顧問規劃向（2027 AI plan）、收費場（Adulting USD 67、Agents Without Code USD 195）、產品示範（Gamma AI）、獲客場（ACS Shadow AI）、資格審核產品導入（先行智庫 MaiAgent）。Microsoft Reactor 11/18 官方頁仍未寫明免費票價，暫不收錄。SFSU 活動頁本回合 HTTP 403，不收錄。Google Skills 導論頁 HEAD HTTP 200。Accupass 請用 www.accupass.com 官方頁，唔好用 staging。
+- **備註**：已剔除院校限定場（VCC）、未寫明免費票價的 Microsoft Reactor 27715、實體場、資格／會員限定場、帶貨／變現／開發名單場，以及已額滿截止場。TAI Labs「MCP Explained」官方已由 11/19 改期至 12/03，改列入可報名預報。NAAIC 官方頁未明示票價，按公開 Zoom 登記、未見收費收入，已於卡片註明。
