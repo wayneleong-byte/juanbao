@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>卷報｜免費 AI 課程 · 2026年11月20日</title>
+<meta name="description" content="2026-11-20 免費 AI 課程卷報：今日舉行與今日可報名的線上免費課程整理。">
+<style>
+
+:root {
+  --ink: #3d2314;
+  --ink-soft: #5c4033;
+  --rule: #2b160c;
+  --paper: #f3e6c9;
+  --paper-deep: #e8d5a8;
+  --cream: #faf3e0;
+  --accent: #8b4513;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Songti SC", "Noto Serif TC", "Libre Baskerville", Georgia, "Times New Roman", serif;
+  line-height: 1.55;
+}
+/* paper grain */
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+  mix-blend-mode: multiply;
+}
+a { color: var(--accent); }
+.wrap { max-width: 980px; margin: 0 auto; padding: 24px 18px 64px; position: relative; z-index: 1; }
+.masthead {
+  text-align: center;
+  border-top: 4px double var(--rule);
+  border-bottom: 4px double var(--rule);
+  padding: 18px 8px 14px;
+  background: var(--cream);
+  margin-bottom: 18px;
+  animation: masthead-in 0.9s ease-out both;
+}
+@keyframes masthead-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.masthead .logo {
+  width: 88px; height: 88px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  border: 2px solid var(--rule);
+  background: var(--paper-deep);
+}
+.masthead .eyebrow {
+  letter-spacing: 0.35em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.masthead h1 {
+  margin: 6px 0 4px;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+.masthead .sub {
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.dateline {
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--rule);
+  padding: 8px 2px 10px; margin-bottom: 20px;
+  font-size: 0.92rem;
+}
+.lede {
+  columns: 1;
+  border: 1px solid var(--rule);
+  background: var(--cream);
+  padding: 14px 16px;
+  margin-bottom: 28px;
+}
+.lede strong { letter-spacing: 0.04em; }
+.section-title {
+  font-size: 1.35rem;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 6px;
+  margin: 28px 0 14px;
+  letter-spacing: 0.08em;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--rule);
+  transform-origin: left center;
+  animation: ink-draw 0.85s ease-out both;
+}
+@keyframes ink-draw {
+  from { transform: scaleX(0); opacity: 0.3; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 720px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+.card {
+  display: flex; flex-direction: column;
+  border: 2px solid var(--rule);
+  background: var(--cream);
+  box-shadow: 3px 3px 0 rgba(61,35,20,0.15);
+  opacity: 0;
+  transform: translateY(14px);
+  animation: fade-up 0.55s ease-out forwards;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:nth-child(1) { animation-delay: 0.05s; }
+.card:nth-child(2) { animation-delay: 0.10s; }
+.card:nth-child(3) { animation-delay: 0.15s; }
+.card:nth-child(4) { animation-delay: 0.20s; }
+.card:nth-child(5) { animation-delay: 0.25s; }
+.card:nth-child(6) { animation-delay: 0.30s; }
+.card:nth-child(7) { animation-delay: 0.35s; }
+.card:nth-child(8) { animation-delay: 0.40s; }
+.card:nth-child(9) { animation-delay: 0.45s; }
+.card:nth-child(10) { animation-delay: 0.50s; }
+.card:nth-child(11) { animation-delay: 0.55s; }
+.card:nth-child(12) { animation-delay: 0.60s; }
+.card:nth-child(n+13) { animation-delay: 0.65s; }
+@keyframes fade-up {
+  to { opacity: 1; transform: translateY(0); }
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 8px 14px rgba(61,35,20,0.22);
+}
+.card-img {
+  height: 160px;
+  background: var(--paper-deep);
+  border-bottom: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: center;
+  padding: 10px;
+}
+.card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto; height: auto;
+  object-fit: contain;
+}
+.card-body { padding: 14px 14px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.badge {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--rule);
+  padding: 2px 8px;
+  background: var(--paper-deep);
+}
+.card h3 { margin: 4px 0 0; font-size: 1.15rem; line-height: 1.35; }
+.card-en { font-size: 0.85rem; color: var(--ink-soft); font-style: italic; }
+.meta { margin: 0; font-size: 0.86rem; color: var(--ink-soft); }
+.desc { margin: 6px 0 0; font-size: 0.95rem; }
+.notes { margin: 0; font-size: 0.8rem; color: var(--ink-soft); }
+.btn {
+  margin-top: auto;
+  display: inline-block;
+  align-self: flex-start;
+  text-decoration: none;
+  border: 1.5px solid var(--rule);
+  padding: 6px 12px;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.btn:hover { background: var(--paper-deep); }
+.archives {
+  margin-top: 36px;
+  border-top: 2px solid var(--rule);
+  padding-top: 12px;
+}
+.archives ul { padding-left: 1.2em; }
+.footer {
+  margin-top: 28px;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  border-top: 1px dashed var(--rule);
+  padding-top: 10px;
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before { opacity: 0.04; }
+  .masthead, .section-title::after, .card {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .card:hover {
+    transform: none;
+    box-shadow: 3px 3px 0 rgba(61,35,20,0.15);
+  }
+}
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <img class="logo" src="images/juanbao-fde-star.png" alt="卷報 FDE STAR">
+      <div class="eyebrow">JUANBAO · FREE AI COURSES</div>
+      <h1>卷報</h1>
+      <p class="sub">免費 AI 課程卷報 · 復古日刊</p>
+    </header>
+
+    <div class="dateline">
+      <span>二零二六年十一月二十日（星期五）</span>
+      <span>Asia/Macau（UTC+8）</span>
+      <span>第 018 號</span>
+    </div>
+
+    <section class="lede">
+      <p><strong>今日提要：</strong>核實收錄 <strong>36</strong> 項線上免費 AI 課程／工作坊，其中 <strong>12</strong> 項於今日舉行（主辦時區為 11/20；其中數項換算後為澳門翌日凌晨至早上），其餘 <strong>24</strong> 項為今日仍可報名或即時開讀嘅自學課（包括 11/21 女性創業 AI 短影音與 AIUSI 工作坊、11/21 兩場 Luma 代理場、11/22 Clapingo、11/24 四場 Accupass、11/26 三場 Accupass 與 Virtual Office 工作坊、再改期至 2027-01-28 的 TAI Labs「MCP Explained」，以及清華大學 TAICA 課與九門常設自學課）。免費＝無需付費即可參加或旁聽；證書、付費 AI 方案或 API 用量或另計，已於卡片註明。公開網址：<a href="https://wayneleong-byte.github.io/juanbao/">https://wayneleong-byte.github.io/juanbao/</a>。澳門今日下午／晚上重點：12:00 Snowflake Data &amp; AI Fast Track 第 5 場（至 13:00，英語）；今日繁中沒有可收嘅晚間直播（19:30 兩場 Accupass 已剔除，見下）；20:00 每日免費 AI Masterclass（今日 Fri 場，至 22:00）同 Aemal「Your First AI Employee」（至 21:30，兩場同時段請擇一）；22:00 Packt「用 Grok Bot 建立第一個工程機器人」工作坊（至 23:30）。澳門翌日凌晨：00:00 Meetup「創業者的 Claude 第一步」（至 00:45）；01:00 會計與財務 Claude 工作坊（至 01:30）；02:00 ISTE+ASCD「用 AI 設計評量」（至 03:00）；03:00 Luma「引導 AI：當 Vibe Coding 走偏時」（至 04:00，請勿依 JSON-LD 錯誤時區換算）；04:00 Meetup「讓 Claude 做網站」（至 04:45）；早上 07:00 Nextech「AI for ALL」教師場（至 09:00）；08:30 ElevenLabs 語音代理工作坊（西班牙語，至 09:30）同 09:00 Meetup Claude Code 建立 AI 代理（至 11:00，頭部重疊請擇一）。已剔除以「正式課程優惠」為賣點嘅 Accupass 研究寫作體驗課、轉職班募生場（「挑戰年薪百萬」）、會員／審核限定場（直心健康 Gamma、GEO 加場人工審核）、帶貨／變現場、已額滿場（Rutgers），以及未能核實免費票價或主題唔屬 AI 學習嘅場。TAI Labs「MCP Explained」官方已由先前預報嘅 12/03 再改期至 2027-01-28，已更新可報名預報。11/24 20:00 將有三場繁中並場（Agent 第一堂課、HR×AI、數據分析師選工具），請擇一。funPro 11/24 課正文寫報名審核制，報名後請等信件。11 月 6 至 8 日未出刊。017 號已預告嘅澳門今早凌晨至早上場次（至 Luma Alignment 09:00）不再列為今日舉行。</p>
+    </section>
+
+    <h2 class="section-title">今日舉行</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="card-img"><img src="images/snowflake-fast-track-20261120.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>Snowflake Data &amp; AI Fast Track 第 5 場：人機協作五年路線（今日場）</h3>
+          <div class="card-en">Data &amp; AI Fast Track Session 5: Human + AI: Your 5 Year Road Map</div>
+          <p class="meta"><strong>主辦：</strong>Snowflake（線上／官方系列頁報名）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-20 12:00–13:00（澳門時間；源時區 12:00–13:00 SGT／09:30–10:30 IST／15:00–16:00 AEDT）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200，標題寫 Free 6-Part AI Webinar Series、正文寫 Register free、Snowflake&#x27;s free 6-session training series；Session 5 列 20 November 2026、09:30 AM IST / 12:00 PM SGT / 3:00 PM AEDT、60 minutes。報名表為同頁 Marketo 表單 mktoForm_60896。須於官方頁免費登記</p>
+          <p class="desc">一小時免費線上訓練，屬 Snowflake 六場系列的第 5 場，主題是人與 AI 如何分工、2027 年以後的方向，以及學習路線、證照與社群等下一步。</p>
+          <p class="notes">官方明寫免費。課堂示範使用 Snowflake Cortex，完場或會介紹 Snowflake 學習路徑與 SnowPro 證照，與本場免費旁聽分開。現場參加者另有一份僅直播提供的 2027 預測 PDF。與澳門中午其他行程如有衝突，請自行取捨。</p>
+          <a class="btn" href="https://www.snowflake.com/data-and-ai-fast-track-webinar-series/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/luma-daily-masterclass-20261116.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>每日免費 AI Masterclass（今日 20 Nov 場）</h3>
+          <div class="card-en">DAILY FREE AI Masterclass (8-10PM SGT) | Week of 16 Nov</div>
+          <p class="meta"><strong>主辦：</strong>Alaric Ong／Coach BK Han（AI Hustle Generation／Luma）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-20 20:00–22:00（澳門時間；源時區 20:00–22:00 SGT）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Luma API 票種「Fri 20 Nov, 8-10pm SGT」type=free、require_approval=false、is_disabled=false、cents=null；ticket_info.is_free=true、is_sold_out=false。官方頁寫 Format: Online, live、Ticket: Free。API location_type 標 missing，以官方頁 Virtual／Online, live 為準。其後 11/21–11/22 每日同一時段仍可另選。須於 luma.com 官方頁免費登記；報名後須再開確認電郵中的第二步登記先收到課堂連結</p>
+          <p class="desc">兩小時免費線上課堂，面向非技術背景聽眾，介紹如何把 AI 應用於聊天機器人、電話代理、網站、廣告、影像與自動化等服務包裝，並討論定價與經常性收入模式的基本概念。</p>
+          <p class="notes">官方寫明課堂免費；內容會談到收費服務包裝與收入路徑，入場本身免費，亦不保證收入。報名後請檢查確認電郵（包括促銷或垃圾郵件匣）完成第二步登記。與同日 20:00–21:30 Aemal「Your First AI Employee」部分重疊，只能擇一或聽後段。</p>
+          <a class="btn" href="https://luma.com/e4o5xp76" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/luma-aemal-ai-employee-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>你的第一位 AI 員工（今日場，線上大師課）</h3>
+          <div class="card-en">Your First AI Employee</div>
+          <p class="meta"><strong>主辦：</strong>Aemal Sayer（官方頁／Luma／Google Meet）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-20 20:00–21:30（澳門時間；源時區 13:00–14:30 Europe/Berlin, CET UTC+1）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200，寫 Ticket Free、Free entry This one is free、Online、Google Meet link after you register。Luma 報名頁 https://luma.com/wanfeeex ticket_info.is_free=true、票種 Standard type=free、is_disabled=false，JSON-LD price=0、OnlineEventAttendanceMode。議程：13:00–14:00 講解與示範，14:00–14:30 問答。須於 Luma 免費登記</p>
+          <p class="desc">90 分鐘免費線上大師課，示範「會接任務、做事並回報」的 AI 員工與只會回答問題的聊天機器人有何分別，並用淺白語言說明可先交出的工作與基本工具設定。</p>
+          <p class="notes">請到官方頁或 Luma（luma.com/wanfeeex）免費報名後才會收到 Google Meet 連結。官方亦提到可在 YouTube @AgentGeeks 觀看，課堂或會錄影。與同日 20:00–22:00 每日 Masterclass 重疊。</p>
+          <a class="btn" href="https://www.aemalsayer.com/events/your-first-ai-employee-2026-11-20" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/eventbrite-grok-bot-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>用 Grok Bot 建立第一個工程機器人（今日場）</h3>
+          <div class="card-en">Build Your First Engineering Bot with Grok Bot</div>
+          <p class="meta"><strong>主辦：</strong>Packt Publishing Limited（Eventbrite／線上）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-20 22:00–23:30（澳門時間；源時區 14:00–15:30 UTC／09:00–10:30 EST）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Eventbrite UK 官方頁 HTTP 200，標題與正文列 Friday, November 20 • 2 PM - 3:30 PM UTC，正文另寫 9 AM - 10:30 AM EST；JSON-LD offers lowPrice=0.0、highPrice=0.0、availability=InStock、OnlineEventAttendanceMode。正文寫 Your free ticket、In this free 1-hour workshop。須於 eventbrite.co.uk 官方頁免費登記</p>
+          <p class="desc">免費線上工作坊，示範如何建立一個能理解程式庫、團隊慣例與工作流程的工程機器人，並把可重複的任務做成可再用技能，較高風險動作先暫停等人批准。</p>
+          <p class="notes">官方時段為 90 分鐘（14:00–15:30 UTC），正文有一處寫成 1-hour workshop，以鐘面時段為準。免費票會附帶 Packt「Build with AI」電子報，與入場免費分開。完場提供錄影與完課證明。</p>
+          <a class="btn" href="https://www.eventbrite.co.uk/e/build-your-first-engineering-bot-with-grok-bot-tickets-2003387418699" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/meetup-claude-founders-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>創業者的 Claude 第一步：帳戶、專案與第一批任務（今日場，跨至凌晨）</h3>
+          <div class="card-en">Claude for Founders, Step One: Accounts, Projects and First Tasks [ONLINE]</div>
+          <p class="meta"><strong>主辦：</strong>Miami AI Founders &amp; Entrepreneurs Club／Bridges Network（Meetup／Google Meet）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 00:00–00:45（澳門時間；源時區 2026-11-20 11:00–11:45 EST, America/New_York, UTC-5）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Meetup 官方頁 HTTP 200，eventType=ONLINE、dateTime=2026-11-20T11:00:00-05:00、endTime=11:45、feeSettings=null、JSON-LD OnlineEventAttendanceMode；正文寫 45 minutes, no cost。須於 Meetup 免費 RSVP 後才會看到 Google Meet 連結</p>
+          <p class="desc">45 分鐘免費線上入門，面向少用或沒用過 Claude 的創業者，現場一起開帳戶、改設定、用 Projects 記住自己的業務，並把本週三件真實任務交給 Claude。</p>
+          <p class="notes">免費依據為正文「45 minutes, no cost」，JSON-LD 未另列票價。報名表有可選的免費諮詢與電話欄，可略過。完場前數分鐘會簡短說明主辦可如何協助落地，可留下或先離席。面向邁阿密與 Bridges Network 的老闆，線上公開報名。</p>
+          <a class="btn" href="https://www.meetup.com/miami-ai-founders-entrepreneurs-club/events/317416948/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/eventbrite-claude-accounting-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>會計與財務的 Claude 工作坊（今日場，跨至凌晨）</h3>
+          <div class="card-en">Claude Workshop for Accounting and Finance</div>
+          <p class="meta"><strong>主辦：</strong>Adam Walker, Atlantic Labs AI／Nazim Girach, Bonsen AI（Eventbrite／LinkedIn Live）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 01:00–01:30（澳門時間；源時區 2026-11-20 12:00–12:30 EST, UTC-5）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Eventbrite 官方頁 HTTP 200，正文寫 A free 30-minute workshop、12 PM - 12:30 PM EST；JSON-LD offers lowPrice=0.0、highPrice=0.0、availability=InStock、startDate=2026-11-20T12:00:00-05:00、OnlineEventAttendanceMode。直播於 LinkedIn Live。須於 Eventbrite 免費登記以收取連結</p>
+          <p class="desc">30 分鐘免費線上工作坊，示範如何用 Claude 的 Skills 與連接器，在已有的簿記應用（例如 QuickBooks）裡處理分類與規則較複雜的賬目工作。</p>
+          <p class="notes">主辦與講者為 AI 解決方案公司，課堂含產品式示範，入場本身免費。請以 Eventbrite 確認信與 LinkedIn 直播頁為準。</p>
+          <a class="btn" href="https://www.eventbrite.com/e/claude-workshop-for-accounting-and-finance-tickets-2004831314430" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/iste-google-ai-assessments-20261120.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>用 AI 設計能看見學生思考的評量（今日場，跨至凌晨）</h3>
+          <div class="card-en">Design assessments that capture student thinking</div>
+          <p class="meta"><strong>主辦：</strong>ISTE+ASCD／Google AI Educator Series（Zoom Webinar）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 02:00–03:00（澳門時間；源時區 2026-11-20 13:00–14:00 ET, America/New_York, UTC-5）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方系列頁 HTTP 200，寫 Free AI professional development for K-12 and Higher Ed educators，Fridays at 1:00 PM ET / 10:00 AM PT，Nov 20, 2026 本場仍為 Register。Zoom 報名頁列 Nov 20, 2026 01:00 PM Eastern Time，fee.chargeFee=false、fee=0.0。須於 Zoom 免費登記：https://iste.zoom.us/webinar/register/WN_MQq4KDr7Rq2oSzBwFXrOPA</p>
+          <p class="desc">一小時免費線上培訓，屬 Google AI Educator Series 的 train-the-trainer 場，由 Brandie Wright 主講，介紹如何用 AI 協助設計更能看見學生思考過程的評量，並學習把模組帶回校園培訓同事。</p>
+          <p class="notes">官方定位為美國 K-12 與高等教育工作者的免費專業發展，Zoom 報名頁未另設會員或院校登入牆。系列頁寫 ISTE+ASCD 與 Google 合作，把實務 AI 培訓提供給美國各地教育工作者；非教師亦可嘗試報名，但內容以中學教學與帶領培訓為主。系列介紹頁：https://iste.ascd.org/google-ai-series-training-events</p>
+          <a class="btn" href="https://iste.zoom.us/webinar/register/WN_MQq4KDr7Rq2oSzBwFXrOPA" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/luma-steering-ai-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>引導 AI：當 Vibe Coding 走偏時怎麼糾正（今日場，跨至凌晨）</h3>
+          <div class="card-en">Steering AI: When Vibe Coding Goes Wrong (and How to Fix It)</div>
+          <p class="meta"><strong>主辦：</strong>AI Adoption Forum／Niels de Vries, Bridge2AI（Luma／線上）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 03:00–04:00（澳門時間；源時區 2026-11-20 11:00–12:00 PST, America/Vancouver, UTC-8）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Luma 官方頁 HTTP 200，ticket_info.is_free=true、票種 Standard type=free、is_disabled=false、registration_availability=open、location_type=meet、visibility=public。API start_at=2026-11-20T19:00:00.000Z、timezone=America/Vancouver。JSON-LD 誤寫 startDate=2026-11-20T12:00:00.000-07:00（冬季溫哥華應為 PST UTC-8，同一瞬間實為 11:00 而非 12:00），本刊不以該偏移換算。須於 luma.com 免費登記</p>
+          <p class="desc">一小時免費線上講座，由 Niels de Vries 分享用 AI 寫軟體時指示被誤解、方向走偏的實例，以及如何把模型拉回正軌、避免只做出看起來厲害卻不合用的結果。</p>
+          <p class="notes">請勿依 JSON-LD 的 -07:00／12:00 換算。以 Luma 時區 America/Vancouver 及 UTC 開始時間為準。</p>
+          <a class="btn" href="https://luma.com/djbr1xnd" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/meetup-claude-website-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>一個下午讓 Claude 幫你做出網站（今日場，跨至清晨）</h3>
+          <div class="card-en">From Idea to Live Website in an Afternoon: You Describe, Claude Builds [ONLINE]</div>
+          <p class="meta"><strong>主辦：</strong>Seattle AI for Business Owners／Bridges Network（Meetup／Google Meet）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 04:00–04:45（澳門時間；源時區 2026-11-20 12:00–12:45 PST, America/Los_Angeles, UTC-8）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Meetup 官方頁 HTTP 200，eventType=ONLINE、dateTime=2026-11-20T12:00:00-08:00、endTime=12:45、timezone=America/Los_Angeles、feeSettings=null；正文寫 45 minutes, no cost。須於 Meetup 免費 RSVP 後才會看到 Google Meet 連結</p>
+          <p class="desc">45 分鐘免費線上實作，示範如何寫一份簡短簡報，讓 Claude 生成首頁、關於我們與聯絡頁，再用免費或低成本空間把網站上線。適合不會寫程式、但需要網站的老闆與自由工作者。</p>
+          <p class="notes">免費依據為正文「45 minutes, no cost」。報名表有可選的免費諮詢與電話欄，可略過。官方透明度說明：最後數分鐘會邀請參加者向團隊尋求協助，課程本身可不依賴此段。上線或需自備免費／低成本託管帳號。</p>
+          <a class="btn" href="https://www.meetup.com/seattle-ai-for-business-owners/events/317273622/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>AI for ALL：更包容、更可及的學習體驗（今日場，跨至早上）</h3>
+          <div class="card-en">AI for ALL - Building Inclusive, Accessible, and Future-Ready Learning Experiences</div>
+          <p class="meta"><strong>主辦：</strong>Nextech／Leandra McGriff, Infosys Foundation USA（Zoom）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 07:00–09:00（澳門時間；源時區 2026-11-20 18:00–20:00 ET, UTC-5）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200，寫 This session is open to all K-12 Educators、Friday, November 20, 2026 from 6 – 8 PM Eastern, on Zoom。轉載頁 k12webinars.com JSON-LD isAccessibleForFree=true、offers.price=0.00、Members only No。報名：https://us02web.zoom.us/meeting/register/ETJVotpPQ2ePf1kzyQyc_w</p>
+          <p class="desc">兩小時免費 Zoom 場，面向 K-12 教師，介紹如何用 AI 協助調整教材、減少障礙，並支援身心障礙學生、多語學習者及需要額外支持的學生，同時把教師判斷放在中心。完場提供出席證明。</p>
+          <p class="notes">官方資格寫 open to all K-12 Educators，並非某一所學校的學號限制；Nextech 本身服務印第安納學生，但本場未寫僅限該州。官方頁未提供活動主視覺，image 留空。請於 Zoom 報名頁完成免費登記。</p>
+          <a class="btn" href="https://nextech.org/event/ai-for-all-building-inclusive-accessible-and-future-ready-learning-experiences/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/luma-elevenlabs-voice-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>用 ElevenLabs 建立第一個語音 AI 代理（今日場，跨至早上，西班牙語）</h3>
+          <div class="card-en">Dale voz a tu idea: crea tu primera agente de IA</div>
+          <p class="meta"><strong>主辦：</strong>Amiga Lab（Luma／線上）</p>
+          <p class="meta"><strong>語言：</strong>西班牙語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 08:30–09:30（澳門時間；源時區 2026-11-20 19:30–20:30 America/Bogota, UTC-5；同時約為 19:30–20:30 EST）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Luma 官方頁 HTTP 200，ticket_info.is_free=true、票種 Standard type=free、is_disabled=false、location_type=meet、locale=es。API start_at=2026-11-21T00:30:00.000Z、timezone=America/Bogota。正文寫 desde cero y gratis。須於 luma.com 免費登記</p>
+          <p class="desc">一小時免費西班牙語實作課，帶你用 ElevenLabs 從零建立會聽、會說、並能依據你提供資料回應的語音代理，包括提示詞個性、工作流程與知識庫三部分。</p>
+          <p class="notes">課堂語言為西班牙語。實際時區為 America/Bogota（全年 UTC-5），與冬季美東時間相同，故 7:30 PM ET 的說法與官方時段相符。完場可得到可分享的代理連結；進階用量或需 ElevenLabs 帳戶／方案，入場本身免費。與 09:00 開始的 Claude Code 工作坊頭部重疊。</p>
+          <a class="btn" href="https://luma.com/dcjux7hh" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/meetup-claude-code-agent-20261120.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日舉行</span>
+          <h3>用 Claude Code 建立第一個 AI 代理（今日場，跨至早上）</h3>
+          <div class="card-en">Build your first AI Agent : Claude Code</div>
+          <p class="meta"><strong>主辦：</strong>Stackle - Your Career Lab／Chris (Crispus Roshan)（Meetup／YouTube Live）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 09:00–11:00（澳門時間；源時區 2026-11-20 17:00–19:00 PST, America/Los_Angeles, UTC-8）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Meetup 官方頁 HTTP 200，eventType=ONLINE、dateTime=2026-11-20T17:00:00-08:00、endTime=19:00、feeSettings=null、status=ACTIVE；正文寫 Build Your First AI Agent is a free, live, hands-on series。直播於 YouTube Live，連結約於開始前 1 小時公布。須於 Meetup 免費 RSVP</p>
+          <p class="desc">免費線上實作系列的一場，用約 50 行 Python 從零寫一個代理迴圈，並讓它讀職缺與履歷、判斷合適程度。適合有基本 Python 的工程與轉職者；新手也可跟官方提供的程式碼一起看。</p>
+          <p class="notes">官方時段為兩小時，正文另有一處寫 In 60 minutes，以 Meetup 鐘面 17:00–19:00 PST 為準。請自備電腦與免費 Google Colab 帳戶。系列下一次為 12/02 的 MCP 工具場。與 08:30 開始的西班牙語 ElevenLabs 場頭部重疊。</p>
+          <a class="btn" href="https://www.meetup.com/stackle-your-career-lab/events/317310635/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+    </div>
+
+    <h2 class="section-title">今日可報名／自學</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-sheaspire-shortvideo-20261121.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>零基礎用手機做第一支 AI 短影音（11/21 免費線上；有性別門檻）</h3>
+          <div class="card-en">女性創業講座：零基礎的第一支手機ＡＩ短影音製作／線上</div>
+          <p class="meta"><strong>主辦：</strong>她渴望 SheAspire／潘曉涵（Accupass／Google Meet）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 14:00–15:30（澳門時間；源時區 14:00–15:30 GMT+8）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；startAt=2026-11-21T06:00:00Z、onlineRemark=本次活動採用Google Meet進行。正文寫免費報名。須於 www.accupass.com 官方頁免費登記</p>
+          <p class="desc">90 分鐘免費線上講座，面向零基礎的女性創業與品牌主理人，示範如何用手機與 AI 找題、寫口播稿、拍片、生成 B-roll，並用免費 App 上字幕與剪輯。</p>
+          <p class="notes">官方對象為創業女性、對創業或主題有興趣的女性。原文：「＊男性報名需與女性夥伴共同報名參加，請於報名表中填寫同行女性夥伴」。請先確認自己是否符合再報名。</p>
+          <a class="btn" href="https://www.accupass.com/event/2610190551411251887121" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>由 AI 助理到 AI 代理（11/21 免費 Zoom；原 11/19 場次改期）</h3>
+          <div class="card-en">From AI Assistant to AI Agent</div>
+          <p class="meta"><strong>主辦：</strong>AI User Safety Initiative／Dr. Gbemisola Adetayo（線上／Zoom）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-22 03:00–06:00（澳門時間；源時區 2026-11-21 13:00–16:00 CST, UTC-6／14:00–17:00 EST／19:00–22:00 GMT）；Online，Zoom</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200，仍列 Saturday, November 21, 2026 · Free on Zoom，1–4 PM CST，Investment: FREE，Register for this session。原 11/19 Prompt Like a Pro 場次已改期至此，已報名者名額自動延續。同一頁 11/26 免費問答場仍開放。須於官方頁免費登記</p>
+          <p class="desc">三小時免費工作坊：用 AI 思考業務決定、把筆記變成可檢查的草稿，並建立一條帶審批步驟的 LinkedIn 內容工作流（由構思到決定是否發布）。也會示範簡單電郵自動化；連接真實信箱與真正發帖屬可選。</p>
+          <p class="notes">官方已把原定 11/19「Prompt Like a Pro」改到 11/21 本場。換算後為澳門 11/22 凌晨，請按時區評估是否參加。官方建議預留課前準備，並自備 ChatGPT 或 Claude；完整實作或需付費方案或試用，入場本身免費。同一官方頁另有 11/26 免費問答場仍開放報名。</p>
+          <a class="btn" href="https://www.aiusersafety.org/workshops/november-2026/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/luma-ship-agents-20261121.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>把 AI 代理從示範送到可上線（11/21 免費 Zoom）</h3>
+          <div class="card-en">Ship AI Agents to Production</div>
+          <p class="meta"><strong>主辦：</strong>Luma／線上 Zoom</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 22:00–23:30（澳門時間；源時區 19:30–21:00 IST, Asia/Kolkata, UTC+5:30）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Luma 官方頁 HTTP 200，ticket_info.is_free=true、票種 Standard type=free、is_disabled=false、location_type=zoom、visibility=public。API start_at=2026-11-21T14:00:00.000Z、timezone=Asia/Kolkata。正文寫 free, 90-minute live workshop。須於 luma.com 免費登記</p>
+          <p class="desc">90 分鐘免費線上工作坊，示範如何把代理雛型接到真實工具、做出介面，並用 Claude Code 走到可上線，而不只停在提示詞或演示。</p>
+          <p class="notes">官方另列 6:00 AM PST / 9:00 AM EST，與 19:30 IST 相符。內容偏實作與工程決策，建議已試過提示詞或做過簡單演示的人參加。</p>
+          <a class="btn" href="https://luma.com/i7xld6c2" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/luma-builder-day-20261121.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>AI Agents Builder Day（11/21 免費線上建造日）</h3>
+          <div class="card-en">AI Agents Builder Day</div>
+          <p class="meta"><strong>主辦：</strong>Luma／線上 Zoom</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-21 17:00–2026-11-22 04:00（澳門時間；源時區 2026-11-21 09:00–20:00 GMT, Europe/London）。當中現場開場與工作坊約 20:00 澳門時間（12:00 GMT），提交截止 02:00（18:00 GMT）</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Luma 官方頁 HTTP 200，ticket_info.is_free=true、票種 Standard type=free、is_disabled=false、location_type=zoom。API start_at=2026-11-21T09:00:00.000Z、end_at=20:00:00.000Z、timezone=Europe/London。須於 luma.com 免費登記</p>
+          <p class="desc">一整天免費線上建造活動：可按自己節奏做一個 AI 代理或可重用技能，並有現場開場與四場工作坊（如何建立、部署、測試與分享），傍晚再投票選出作品。</p>
+          <p class="notes">官方寫 This is an async building day，不必從頭坐滿 11 小時。時段很長，澳門讀者可只參加 20:00 起的現場工作坊段。提交與投票規則以官方頁當日公布為準。</p>
+          <a class="btn" href="https://luma.com/alnki6iz" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>在職人士免費 AI 工作坊：實用工具（11/22 場）</h3>
+          <div class="card-en">Free AI Workshop for Working Professionals | Practical AI Tools</div>
+          <p class="meta"><strong>主辦：</strong>Clapingo Learn AI（線上）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-22 13:30–16:30（澳門時間；源時區 2026-11-22 11:00–14:00 IST, UTC+5:30）；3 Hours Live Session</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200，標題與正文寫 Free AI Workshop、Reserve Your Free Seat；日期 22nd November 2026, Sunday 11:00 AM IST、3 Hours Live Session。須於官方頁免費登記</p>
+          <p class="desc">三小時免費線上工作坊，面向在職人士與老闆，介紹用 AI 加快求職、個人品牌、內容與簡報等日常流程，無需技術背景。</p>
+          <p class="notes">官方寫 Only for working professionals &amp; business owners，屬對象說明，頁面未要求會員或院校學號。本刊截稿時官方頁沒有獨立活動主視覺，image 留空。017 號已收過同系列 11/19 場。</p>
+          <a class="btn" href="https://learnai.clapingo.com/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-funpro-geo-20261124.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>AI 搜尋時代的網站優化入門（11/24 免費課）</h3>
+          <div class="card-en">【11/24 funPro 免費線上課程】AI 搜尋時代的網站優化入門課：從零開始打造可被 AI 引用的長效流量</div>
+          <p class="meta"><strong>主辦：</strong>cacaFly 數位行銷研究院／funPro（Accupass／Microsoft Teams）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-24 14:00–15:00（澳門時間；源時區 14:00–15:00 GMT+8）；Online，Microsoft Teams</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；startAt=2026-11-24T06:00:00Z、onlineRemark 寫 Teams。須於 www.accupass.com 官方頁免費登記</p>
+          <p class="desc">一小時免費線上入門課，介紹在 AI 搜尋時代如何優化網站內容，讓資料更有機會被模型引用，建立較長遠的可見度。</p>
+          <p class="notes">官方正文寫「［本活動採報名審核制，報名成功者會收到信件通知］」，並保留審核參加者資格之權利，報名後請等候信件，勿假設即時入場。主辦為數位行銷培訓單位，完場或會介紹其他課程，與本場免費旁聽分開。</p>
+          <a class="btn" href="https://www.accupass.com/event/2611030206401830021242" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-agent-intro-20261124.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>AI Agent 第一堂課：一次搞懂 AI Agent（11/24 免費講座）</h3>
+          <div class="card-en">【免費講座 - 必修】 AI Agent 第一堂課：一次搞懂 AI Agent   一起AI簡單學</div>
+          <p class="meta"><strong>主辦：</strong>一起AI簡單學（Accupass／線上）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-24 20:00–21:00（澳門時間；源時區 20:00–21:00 GMT+8）；Online</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；startAt=2026-11-24T12:00:00Z。須於 www.accupass.com 官方頁免費登記</p>
+          <p class="desc">一小時免費入門講座，面向唔識 AI 或唔知點開始的人，把 AI Agent 的基本觀念一次講清楚。歡迎約 15 至 70 歲參加。</p>
+          <p class="notes">官方 API 未另列直播工具名稱，請以報名後通知為準。今日已開放報名。</p>
+          <a class="btn" href="https://www.accupass.com/event/2611151310421555819431" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-hr-ai-20261124.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>HR × AI 人資實戰：一人 HR 也能組成工作團隊（11/24 免費分享會）</h3>
+          <div class="card-en">&lt;11/24線上分享會&gt;【HR × AI 人資實戰應用】一人 HR，也能讓 AI 成為你的工作團隊</div>
+          <p class="meta"><strong>主辦：</strong>益思智庫股份有限公司（Accupass／Microsoft Teams）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-24 20:00–21:00（澳門時間；源時區 20:00–21:00 GMT+8）；Online，Microsoft Teams</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；startAt=2026-11-24T12:00:00Z。正文寫「11/24(二) 20:00 ~ 21:00 免費參加」「直播軟體：Teams（報名後提供直播連結）」。須於 www.accupass.com 官方頁免費登記</p>
+          <p class="desc">一小時免費線上分享會，介紹人力資源工作如何借助 AI，讓一人 HR 也能把部分事務交給 AI 處理。</p>
+          <p class="notes">官方 API 與頁面的課程說明很短，細節請以報名後通知為準。與同日 20:00 的「AI Agent 第一堂課」及安迪學堂數據分析師場並場，只能擇一。</p>
+          <a class="btn" href="https://www.accupass.com/event/2611150732139498037480" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-andy-data-ai-20261124.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>數據分析師如何挑選 AI 工具（11/24 免費 YouTube 直播；與 11/19 同內容）</h3>
+          <div class="card-en">【直播】數據分析師如何挑選 AI 工具？ 從 AI 到 AI Agent 的路怎麼走？ 方法 &amp; 案例一次分享！</div>
+          <p class="meta"><strong>主辦：</strong>Andy Learning 安迪學堂（Accupass／YouTube）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-24 20:00–21:20（澳門時間；源時區 20:00–21:20 GMT+8）；YouTube 線上直播。官方另有已結束的 11/19 20:00–21:20 同內容場</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；onlineRemark=本活動將在 Youtube 進行直播。正文寫「本場講座開放大家免費參與」，並列兩場相同內容：11/19 與 11/24 20:00–21:20。須於 www.accupass.com 官方頁免費登記後進入直播</p>
+          <p class="desc">約 80 分鐘免費直播，由數據分析師 Andy 分享如何從企業真實需求出發選擇 AI 工具，以及數據分析師如何從使用 AI 走到打造 AI Agent。兩場內容相同，選 11/24 即可。</p>
+          <p class="notes">API 把兩場寫成 11/19 20:00 至 11/24 21:00 的時間窗，實際開講時段以正文 11/24 20:00–21:20 為準。與同日 20:00 另外兩場繁中課並場。</p>
+          <a class="btn" href="https://www.accupass.com/event/2611160901151809039556" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-raccoon-brand-20261126.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>AI 搜尋時代的品牌推薦規則（11/26 免費講座）</h3>
+          <div class="card-en">客戶不再 Google 你了？AI 搜尋時代，品牌被推薦的新規則</div>
+          <p class="meta"><strong>主辦：</strong>Raccoon AI／白話文商學院 Frank 邱韜誠／Shane（Accupass／Zoom）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-26 14:00–15:30（澳門時間；源時區 14:00–15:30 GMT+8）；Online，Zoom</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；startAt=2026-11-26T06:00:00Z、onlineRemark=本活動使用 Zoom 線上進行。須於 www.accupass.com 官方頁免費登記</p>
+          <p class="desc">90 分鐘免費線上講座，討論消費者改向 ChatGPT、Gemini、Perplexity 問「有什麼品牌值得推薦」時，品牌為何會或不會出現在答案裡，並用產業例子示範如何觀察引用來源與被描述的方式。</p>
+          <p class="notes">屬行銷／可見度技能課，完場最後約 10 分鐘或會示範 WorkDuo 儀表板，與本場免費旁聽分開。與同日 14:00 Welly 企業導入 AI 場合時段。今日已開放報名。</p>
+          <a class="btn" href="https://www.accupass.com/event/2611100250586665056940" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-welly-enterprise-20261126.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>企業 AI 落地能力與案例（11/26 免費講座）</h3>
+          <div class="card-en">企業導入 AI 效果有限？AI 落地必備能力與案例解析</div>
+          <p class="meta"><strong>主辦：</strong>Welly SEO／黃適文（Accupass／Zoom）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-26 14:00–15:30（澳門時間；源時區 14:00–15:30 GMT+8）；Online，Zoom</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；startAt=2026-11-26T06:00:00Z、onlineRemark=Zoom 線上直播。須於 www.accupass.com 官方頁免費登記</p>
+          <p class="desc">90 分鐘免費線上講座，討論企業已經有人使用 AI、整體效益卻不明顯的原因，介紹把共用 Agent、權限與資安一併設計進流程的做法，並用案例說明如何選擇第一個落地流程。</p>
+          <p class="notes">完場或會介紹顧問或導入服務，與本場免費旁聽分開。與同日 14:00 Raccoon 品牌推薦場合時段。今日已開放報名。</p>
+          <a class="btn" href="https://www.accupass.com/event/2610220358532616065040" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/accupass-rex-ai-assistant-20261126.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>從零入門到個人化 AI 助手（11/26 免費直播）</h3>
+          <div class="card-en">AI 工具這麼多，我該從哪個開始？從零入門到個人化 AI 助手－Rex【閱讀星世界】</div>
+          <p class="meta"><strong>主辦：</strong>閱讀星世界／不小星球／Rex（Accupass／YouTube）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>2026-11-26 21:00–22:00（澳門時間；源時區 21:00–22:00 GMT+8）；YouTube 線上直播</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 Accupass API isFree=true、eventPlaceType=Online、registerBtn price=NT$ 0、isDisabled=false、textKey=Publish；startAt=2026-11-26T13:00:00Z、endAt=2026-11-26T14:00:00Z。正文寫形式為 YouTube 線上直播。須於 www.accupass.com 官方頁免費登記</p>
+          <p class="desc">一小時免費 YouTube 直播，面向還沒真正用起 AI 的人：討論新手可以先選哪種工具、除了聊天還能請 AI 做什麼，並在最後約 20 分鐘示範如何做出較貼近自己需求的個人化助手。不用編程背景。</p>
+          <p class="notes">官方 API 的 onlineRemark 為空白，直播平台以活動正文的 YouTube 線上直播為準。今日已開放報名。</p>
+          <a class="btn" href="https://www.accupass.com/event/2610270616091929409210" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/voffice-webinar-20261119.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>小企業主免費 AI 工作坊（11/26 場；換算後為澳門 11/27 凌晨）</h3>
+          <div class="card-en">Free AI Workshop for Small Business Owners</div>
+          <p class="meta"><strong>主辦：</strong>Virtual Office AI（線上／Zoom）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2026-11-27 01:00–01:45（澳門時間；源時區 2026-11-26 12:00–12:45 ET, UTC-5）；Live on Zoom，45 minutes</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200，寫 Thursday, November 26, 2026 · 12:00 PM ET — Live on Zoom · 45 minutes · Free to attend，以及 Save My Free Seat、No jargon, no coding, no sales pitch。須於 vofficeai.com/webinar 免費登記</p>
+          <p class="desc">45 分鐘免費線上課，用淺白語言說明 AI 與搜尋的分別、上下文為何重要、常見限制，並示範如何把業務資料一次教給 AI。</p>
+          <p class="notes">官方寫 no sales pitch。報名表預設同意接收電話、短訊與電郵更新，請按自己意願決定。換算後為澳門 11/27 凌晨，請按作息評估。圖片復用同系列既有官方圖。</p>
+          <a class="btn" href="https://vofficeai.com/webinar" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/tailabs-mcp.jpg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>MCP 入門：把 Claude 接到常用工具（已再改期至 2027-01-28）</h3>
+          <div class="card-en">MCP Explained: Connecting Claude to Your Actual Tools</div>
+          <p class="meta"><strong>主辦：</strong>TAI Labs（線上）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>2027-01-29 00:00–00:30（澳門時間；源時區 2027-01-28 16:00–16:30 GMT / 16:00 UTC）；Live online，30 minutes</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200，標 Live online、Free to join、Thursday, 28 January 2027 at 16:00 GMT · 16:00 UTC、30 minutes、Register free；JSON-LD isAccessibleForFree=true、startDate=2027-01-28T16:00:00+00:00。此場已由原定 11/19 改至 12/03，再改至 2027-01-28。須於官方頁免費登記</p>
+          <p class="desc">30 分鐘免費線上短場，示範如何用 MCP 把 Claude 連到實際使用的工具，並留時間提問。官方寫明免費、不必先開帳戶，電郵即可登記。</p>
+          <p class="notes">017 號仍列 12/03；今日核實官方頁與 JSON-LD 已改為 2027-01-28。入場免費，但距離較遠，請自行決定是否現在登記。報名後會收到行事曆邀請與開場前約一小時提醒。</p>
+          <a class="btn" href="https://tailabs.ai/events/427" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/nthu-ai.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>2026-TAICA 關鍵科技探索：人工智慧</h3>
+          <div class="card-en">2026-TAICA 關鍵科技探索：人工智慧（6-12月）</div>
+          <p class="meta"><strong>主辦：</strong>國立清華大學（清華磨課師 MOOCs）</p>
+          <p class="meta"><strong>語言：</strong>繁體中文</p>
+          <p class="meta"><strong>時段：</strong>開課期間 2025/09/08–2026/12/31；報名時間 2025/09/01–2026/12/31；自學為主</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HTTP 200；報名時間 2025/09/01–2026/12/31，課程費用：免費，頁面顯示已有報名學生</p>
+          <p class="desc">清華大學免費線上課，由 AI 發展歷程講到機器學習、影像辨識與語言生成，並討論可信度與公平性等常被忽略的問題，幫助理解日常推薦、輔助分析背後的技術與邏輯。</p>
+          <p class="notes">屬學期制開放課，不是今日直播。課程頁顯示已有報名學生，可按自己進度學習。</p>
+          <a class="btn" href="https://mooc.nthu.edu.tw/course/info/459" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/elements-of-ai.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>Elements of AI：人工智慧入門</h3>
+          <div class="card-en">Elements of AI</div>
+          <p class="meta"><strong>主辦：</strong>University of Helsinki／MinnaLearn</p>
+          <p class="meta"><strong>語言：</strong>多語（含英語）</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HEAD／GET HTTP 200；免費開讀，證書安排以官方說明為準</p>
+          <p class="desc">廣為使用的免費 AI 入門課，用淺白語言介紹人工智能是什麼、能做什麼、不能做什麼，適合完全沒有技術背景的讀者。</p>
+          <p class="notes">常設自學課，今日仍可報名開讀。</p>
+          <a class="btn" href="https://www.elementsofai.com/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/google-genai.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>生成式 AI 導論（Google Skills）</h3>
+          <div class="card-en">Introduction to Generative AI</div>
+          <p class="meta"><strong>主辦：</strong>Google Skills</p>
+          <p class="meta"><strong>語言：</strong>英語（另有其他語系版本，以頁面為準）</p>
+          <p class="meta"><strong>時段：</strong>自學，短課，可隨時開始</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 以瀏覽器 User-Agent 對官方頁 HEAD／跟隨重新導向後得 HTTP 200；請以 https://www.skills.google/course_templates/536FREE 為準</p>
+          <p class="desc">Google 官方短課，介紹生成式 AI 的基本概念、常見應用與使用時要注意的限制，適合想先建立正確詞彙的人。</p>
+          <p class="notes">本回合以常見瀏覽器標頭請求官方頁，回 HTTP 200。完成課後或需 Google 帳戶登入。</p>
+          <a class="btn" href="https://www.skills.google/course_templates/536FREE" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/google-mlcc.svg" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>機器學習速成班（Google）</h3>
+          <div class="card-en">Machine Learning Crash Course</div>
+          <p class="meta"><strong>主辦：</strong>Google</p>
+          <p class="meta"><strong>語言：</strong>英語（另有其他語系版本，以頁面為準）</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HEAD／GET HTTP 200；免費開讀</p>
+          <p class="desc">Google 長期開放的機器學習速成課程，由概念、練習到程式實作，適合想由零開始理解模型如何學習的人。</p>
+          <p class="notes">常設自學課。部分練習或需開發環境。</p>
+          <a class="btn" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/hf-llm.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>Hugging Face 大型語言模型課程</h3>
+          <div class="card-en">Hugging Face NLP Course (LLM Course)</div>
+          <p class="meta"><strong>主辦：</strong>Hugging Face</p>
+          <p class="meta"><strong>語言：</strong>英語（另有社區譯本，以頁面為準）</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HEAD／GET HTTP 200（會轉到 chapter1）；免費開讀</p>
+          <p class="desc">由自然語言處理基礎走到 Transformer 與大型語言模型的免費課程，含概念說明與程式示例，適合想理解現代語言模型如何運作的人。</p>
+          <p class="notes">常設自學課。部分章節假設有基礎 Python。</p>
+          <a class="btn" href="https://huggingface.co/learn/llm-course" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/hf-agents.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>Hugging Face AI Agents 課程</h3>
+          <div class="card-en">Hugging Face AI Agents Course</div>
+          <p class="meta"><strong>主辦：</strong>Hugging Face</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HEAD／GET HTTP 200（https://hf.co/learn/agents-course 會轉到 unit0）；免費開讀</p>
+          <p class="desc">免費課程，介紹 AI Agent 的基本構件、工具使用與實作思路，適合已經用過聊天模型、想進一步了解代理系統的人。</p>
+          <p class="notes">常設自學課。部分單元或需 Hugging Face 帳戶與運算資源。</p>
+          <a class="btn" href="https://hf.co/learn/agents-course" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/openai-academy.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>OpenAI Academy 免費課程</h3>
+          <div class="card-en">OpenAI Academy</div>
+          <p class="meta"><strong>主辦：</strong>OpenAI</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始；學院內各課時長不同</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HEAD／GET HTTP 200；學院課程免費開讀，個別課或需登入</p>
+          <p class="desc">OpenAI 官方免費學習中心，提供提示、ChatGPT 使用與相關工作流的入門及進階短課，可按主題自行選讀。</p>
+          <p class="notes">常設自學入口，不是單一課時直播。部分內容或需 OpenAI 帳戶。</p>
+          <a class="btn" href="https://academy.openai.com/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/claude-academy.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>Claude 101</h3>
+          <p class="meta"><strong>主辦：</strong>Anthropic（Claude Academy）</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HEAD／GET HTTP 200；免費開讀，或需帳戶登入</p>
+          <p class="desc">Anthropic 官方入門課，介紹 Claude 能做什麼、如何寫出較清楚的指示，以及使用時的基本注意事項。</p>
+          <p class="notes">常設自學課。</p>
+          <a class="btn" href="https://academy.claude.com/courses/claude-101" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/microsoft-genai.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>生成式 AI 初學者課程（Microsoft）</h3>
+          <div class="card-en">Generative AI for Beginners</div>
+          <p class="meta"><strong>主辦：</strong>Microsoft</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始；課程託管於 GitHub</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方 GitHub 頁 HEAD／GET HTTP 200；教材公開免費</p>
+          <p class="desc">Microsoft 開源的生成式 AI 初學者課程，分課介紹大語言模型概念、提示設計、應用搭建與負責任使用，可按章節自學。</p>
+          <p class="notes">常設自學課。部分練習或需 Azure／API 資源，用量或另行計算。</p>
+          <a class="btn" href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="images/fastai.png" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">今日可報名／自學</span>
+          <h3>給程式員嘅實務深度學習</h3>
+          <div class="card-en">Practical Deep Learning for Coders</div>
+          <p class="meta"><strong>主辦：</strong>fast.ai</p>
+          <p class="meta"><strong>語言：</strong>英語</p>
+          <p class="meta"><strong>時段：</strong>自學，可隨時開始</p>
+          <p class="meta"><strong>報名／截止：</strong>2026-11-20 官方頁 HEAD／GET HTTP 200；課程免費開讀</p>
+          <p class="desc">面向已有編程基礎的免費實務深度學習課程，強調由實際問題出發訓練與使用模型，而不是先堆公式。</p>
+          <p class="notes">常設自學課。需要基本程式能力；運算環境請見官方說明。</p>
+          <a class="btn" href="https://course.fast.ai/" target="_blank" rel="noopener">官方連結 →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="archives">
+      <h2 class="section-title">過刊（近 7 日）</h2>
+      <ul>
+        <li><a href="index.html">2026-11-20（今日）</a></li>
+        <li><a href="2026-11-19.html">2026-11-19</a></li>
+        <li><a href="2026-11-18.html">2026-11-18</a></li>
+        <li><a href="2026-11-17.html">2026-11-17</a></li>
+        <li><a href="2026-11-16.html">2026-11-16</a></li>
+        <li><a href="2026-11-15.html">2026-11-15</a></li>
+        <li><a href="2026-11-14.html">2026-11-14</a></li>
+        <li><a href="2026-11-13.html">2026-11-13</a></li>
+      </ul>
+      <p class="notes">2026-11-06、2026-11-07、2026-11-08 未出刊。近 7 日內已刊過刊均可打開。</p>
+    </div>
+
+    <footer class="footer">
+      <p>僅收錄已用 curl／官方 API／頁面結構化資料核實、標明免費或無收費欄之線上項目；唔捏造連結。今日舉行核實包括：Snowflake Fast Track 官方頁 Free 6-Part／Register free，20 Nov 12:00 PM SGT；Luma 每日 Masterclass 票種「Fri 20 Nov, 8-10pm SGT」type=free、is_disabled=false，ticket_info.is_free=true；Aemal「Your First AI Employee」官方頁 Ticket Free，Luma is_free=true、price=0；Eventbrite Packt Grok Bot 工作坊 JSON-LD lowPrice=0.0、正文 free workshop；Meetup Claude for Founders 同 Claude 做網站正文「45 minutes, no cost」；Eventbrite 會計財務 Claude 工作坊 lowPrice=0.0、正文 A free 30-minute workshop；ISTE+ASCD 系列頁 Free AI professional development，Zoom fee=0.0、chargeFee=false；Luma Steering AI ticket_info.is_free=true，時區以 America/Vancouver 為準（JSON-LD 冬季誤寫 -07:00）；Nextech「AI for ALL」官方 open to all K-12 Educators，轉載頁 price=0.00；Luma ElevenLabs 語音代理 is_free=true（課堂為西班牙語）；Meetup Claude Code 正文「a free, live, hands-on series」。自學常設課於 2026-11-20 重新 HEAD／跟隨重新導向核實，全部 HTTP 200（包括 Google Skills）。第二區均以 Accupass API isFree=true／price=0、或官方頁／JSON-LD／Luma is_free 免費標示核實。</p>
+      <p>資料檔：courses-2026-11-20.json · 時區 Asia/Macau（UTC+8）· 第 018 號 · 產生時間 2026-11-20T09:09:30+08:00</p>
+    </footer>
+  </div>
+</body>
+</html>

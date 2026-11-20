@@ -1,10 +1,10 @@
-# 卷報 SUMMARY · 2026-11-19（Asia/Macau）
+# 卷報 SUMMARY · 2026-11-20（Asia/Macau）
 
-- **課數**：36（今日舉行 19；可報名／自學 17）
-- **期號**：第 017 號（11/6–11/8 未出刊；11/18 第 016 號已出刊）
-- **重點今日場次**：14:00 Accupass GEO 同 Welly「搞懂 AI Agent 都在看什麼」並場（至 15:30，請擇一）；19:50 Accupass「第一次認識 AI Agent 工作法」（至 21:00）；20:00 每日 Masterclass、AI 繪畫實作同 Nova Scale 團隊 AI 並場（請擇一）；20:30 Blue Canvas 英國中小企短場；22:00 Clapingo 三小時工作坊；22:30 SkillOps 同 Coding Blocks 並場；23:00 IMACI「AI Qez Ban」（須經 Instagram 報名）。澳門翌日凌晨：00:00 thalabus 模型架構；01:00 Virtual Office 同 NYC SBS；02:00 ODSC CRM、ChatGPT 語氣同財務代理三場並場；04:30 NAAIC 教師系列末場；早上 09:00 Luma AI 對齊與控制。
-- **HTML**：2026-11-19.html（index.html＝當天）；過刊保留 11/18–11/12（近 7 日內已刊）
-- **資料**：courses-2026-11-19.json
+- **課數**：36（今日舉行 12；可報名／自學 24）
+- **期號**：第 018 號（11/6–11/8 未出刊；11/19 第 017 號已出刊）
+- **重點今日場次**：12:00 Snowflake Fast Track 第 5 場；20:00 每日 Masterclass 同 Aemal「Your First AI Employee」並場（請擇一）；22:00 Packt Grok Bot 工程機器人工作坊。今日繁中沒有可收晚間直播。翌日凌晨至早上：00:00 Claude for Founders；01:00 會計財務 Claude；02:00 ISTE 評量設計；03:00 Steering AI；04:00 Claude 做網站；07:00 Nextech AI for ALL；08:30 ElevenLabs 語音代理（西語）同 09:00 Claude Code 頭部重疊。
+- **HTML**：2026-11-20.html（index.html＝當天）；過刊保留 11/19–11/13（近 7 日內已刊）
+- **資料**：courses-2026-11-20.json
 - **公開網址**：https://wayneleong-byte.github.io/juanbao/
 - **特效**：純 CSS 紙紋 grain、masthead 入場、標題 ink-draw、卡片 staggered fade-up、hover 輕抬；prefers-reduced-motion 關閉
-- **備註**：已剔除院校限定場（VCC）、未寫明免費票價的 Microsoft Reactor 27715、實體場、資格／會員限定場、帶貨／變現／開發名單場，以及已額滿截止場。TAI Labs「MCP Explained」官方已由 11/19 改期至 12/03，改列入可報名預報。NAAIC 官方頁未明示票價，按公開 Zoom 登記、未見收費收入，已於卡片註明。
+- **備註**：已剔除 Accupass 研究寫作體驗課（含正式課程優惠）、轉職班募生場、會員／審核限定場、帶貨／變現場、已額滿場（Rutgers）。TAI Labs「MCP Explained」官方已由 12/03 再改期至 2027-01-28。funPro 11/24 正文寫報名審核制。11/21 女性短影音有性別門檻。
